@@ -11,6 +11,7 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   <!-- 默认主题 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">-->
 </head>
 <body>
   <!-- 定义加载时候的动作 -->
@@ -19,38 +20,69 @@
     window.$docsify = {
 	    // 项目名称
         name: 'NebulaSDK',
-        // 仓库地址，点击右上角的Github章鱼猫头像会跳转到此地址
-		repo: 'https://github.com/YSGStudyHards',
+        // 仓库地址，点击右上角的Github章鱼猫头像会跳转到此地址 https://github.com/demi-Vzense/NebulaSDK-docsify.git
+		repo: '',
 		// 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
 		loadSidebar: true,
 		// 导航栏支持，默认加载的是项目根目录下的_navbar.md文件
 		loadNavbar: true,
 		// 封面支持，默认加载的是项目根目录下的_coverpage.md文件
-		coverpage: true,
+		//coverpage: true,
+		//只在访问主页时加载封面
+		//onlyCover: true,
 		// 最大支持渲染的标题层级
 		maxLevel: 5,
 		// 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级（建议配置为2-4）
 		subMaxLevel: 4,
 		// 小屏设备下合并导航栏到侧边栏
-		mergeNavbar: true,
-		/*搜索相关设置*/
+		//mergeNavbar: true,
+		// 启用相对路径
+		//relativePath: true,
+		/*搜索相关设置*/		
+		//search: 'auto', // 默认值
+		/*search : [
+		  './',            // => /README.md
+		  './快速入门/1-SDK简介',  
+		  './快速入门/2-支持产品',	
+		  './快速入门/3-安装',  
+		  './快速入门/4-使用说明',			  
+		  './技术支持/', 
+		  './SDK详情/',    
+		],*/
 		search: {
 			maxAge: 86400000,// 过期时间，单位毫秒，默认一天
-			paths: 'auto',// 注意：仅适用于 paths: 'auto' 模式
+			//paths: [],// or 'auto'注意：仅适用于 paths: 'auto' 模式 需要去掉，要不搜索只对根目录下readme起效
 			placeholder: '搜索',              
 			// 支持本地化
-			placeholder: {
-				'/zh-cn/': '搜索',
-				'/': 'Type to search'
-			},
+			/*placeholder: {
+				'./快速入门/1-SDK简介': '搜索',
+				'./快速入门/2-支持产品': '搜索',
+				'./快速入门/3-安装': '搜索',
+				'./快速入门/4-使用说明': '搜索',
+				'./SDK详情/1-SDK接口介绍': '搜索',
+				'./SDK详情/2-看图软件NebulaGUITool': '搜索',
+				'./技术支持/1-常见问题': '搜索',
+				'./技术支持/2-联系我们': '搜索',
+				'./': 'Type to search'
+			},*/
 			noData: '找不到结果',
+			/*noData: {
+				'./快速入门/':'找不到结果',
+				'./SDK详情/': '找不到结果',
+				'.技术支持/': '找不到结果',
+				'./': 'No Results'
+			},*/
 			depth: 4,
 			hideOtherSidebarContent: false,
-			namespace: 'Docsify-Guide',
+			namespace: 'NebulaSDK',
 		}
     }
   </script>
   <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>  
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 </body>
 </html>
