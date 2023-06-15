@@ -282,9 +282,9 @@ int exposureTime：表示传感器曝光时间，单位微秒
 
 ## 3  API介绍
 
-### 3.1  VZ_Initialize
+### 3.1 VZ_Initialize
 
-**函数原型：**
+**函数原型：**<div id="Initialize">VZ_Initialize</div>
 
 <span id="VZ_Initialize">VzReturnStatus VZ_Initialize()</span>
 
@@ -302,7 +302,7 @@ VzRetOK：调用成功
 
 其他值：调用失败
 
-### 3.2  VZ_Shutdown
+### 3.2   VZ_Shutdown
 
 **函数原型：**
 
@@ -1133,20 +1133,41 @@ VzRetOK：调用成功
 
 所涉及接口：
 
-| [ VZ_Initialize](#VZ_Initialize)                            |
+| 所涉及接口                          |
 | ----------------------------------------------------------- |
-| [VZ_GetDeviceCount](#VZ_GetDeviceCount)                     |
-| [VZ_GetDeviceInfoList](VZ_GetDeviceInfoList)                |
-| [VZ_OpenDeviceByUri](#VZ_OpenDeviceByUri)                   |
-| [VZ_StartStream](#VZ_StartStream)                           |
-| [VZ_SetHotPlugStatusCallback](#VZ_SetHotPlugStatusCallback) |
-| [VZ_StopStream](#VZ_StopStream)                             |
-| [VZ_CloseDevice](#VZ_CloseDevice)                           |
-| [VZ_Shutdown](#VZ_Shutdown)                                 |
+| [ VZ_Initialize](#_31-vz_initialize)           |
+| [VZ_GetDeviceCount](#_34-vz_getdevicecount) |
+| [VZ_GetDeviceInfoList](#_36-vz_getdeviceinfolist) |
+| [VZ_OpenDeviceByUri](#_37-vz_opendevicebyuri) |
+| [VZ_StartStream](#_311-vz_startstream)        |
+| [VZ_SetHotPlugStatusCallback](#_350-vz_sethotplugstatuscallback) |
+| [VZ_StopStream](#_312-vz_stopstream)           |
+| [VZ_CloseDevice](#_310-vz_closedevice)        |
+| [VZ_Shutdown](#_32-vz_shutdown)                  |
+
+HTML锚点跳转 span id 跳转示例：
 
 [ VZ_Initialize](#VZ_Initialize)
 
 [VZ_Shutdown](#VZ_Shutdown)
+
+html 编译后生成id方式
+
+[ VZ_Initialize](#_31-vz_initialize)
+
+[ sdk简介](../快速入门/1-SDK简介#sdk简介)
+
+[设备连接](../快速入门/3-安装?id=_2-设备连接)
+
+div方式跳转：
+
+[ VZ_Initialize](#Initialize)
+
+a标签锚点方式跳转：
+
+<a href="#Initialize">VZ_Initialize</a>
+
+
 
 Windows C++ 源代码：
 

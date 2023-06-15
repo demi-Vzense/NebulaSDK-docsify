@@ -14,18 +14,16 @@
 
 
 
-公司通过了：
-
-ISO9001: 2015国际质量体系认证
-
-ISO45001: 2018职业健康安全管理体系认证
-
-ISO14001: 2015环境管理体系认证
 
 
 
 
+Nebula SDK是基于Vzense 产品提供的软件开发包，
+
+该开发包目前适用于Windows、Linux、ARM Linux操作系统，
+
+为应用开发者提供一系列友好的API 和简单的应用示例程序。
 
 
 
- [NebulaSDK 介绍](./SDK详情/1-SDK接口介绍.md)
+ [NebulaSDK 介绍](./README.md)
