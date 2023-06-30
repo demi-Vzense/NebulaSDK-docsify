@@ -1,4 +1,4 @@
-![](./Img/Nebula.png)
+![](./Img/pico_icon.png)
 
 **维感科技介绍**
 

@@ -9,9 +9,16 @@
   <!-- 设置浏览器图标 -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <!-- 默认主题 -->
+  <!--设置代码高亮<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/prismjs@1/themes/prism.css" />-->
+  <link href="https://{{cdn}}/prismjs@v1.x/themes/prism.css" rel="stylesheet" /> 
+  
+  <!-- 点中为灰色<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/buble.css"> -->
+  <!--此主题区分不出是否点中<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/pure.css">-->
+  <!-- 淡蓝色底色主题<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dolphin.css">-->
+  <!-- 黑色主题<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">-->
+  <!-- 默认主题-->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">-->
+
 </head>
 <body>
   <!-- 定义加载时候的动作 -->
@@ -20,6 +27,7 @@
     window.$docsify = {
 	    // 项目名称
         name: 'NebulaSDK',
+		//name: '<img src=".\_static\Img\DS77-1-m.png" alt="" width="100%" />',//不能加图片
         // 仓库地址，点击右上角的Github章鱼猫头像会跳转到此地址 https://github.com/demi-Vzense/NebulaSDK-docsify.git
 		repo: '',
 		// 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
@@ -34,6 +42,8 @@
 		maxLevel: 5,
 		// 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级（建议配置为2-4）
 		subMaxLevel: 4,
+		//s设置选中时字体颜色
+		themeColor:'#0000ff',
 		// 小屏设备下合并导航栏到侧边栏
 		//mergeNavbar: true,
 		// 启用相对路径
@@ -82,7 +92,9 @@
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>  
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
   <!--<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>-->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script> -->
+  <script src="https://{{cdn}}/prismjs@v1.x/components/prism-core.min.js"></script>
+  <script src="https://{{cdn}}/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 </body>
 </html>

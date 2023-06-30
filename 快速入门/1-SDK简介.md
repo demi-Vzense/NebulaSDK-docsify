@@ -8,10 +8,7 @@ Nebula SDK是基于Vzense 产品提供的软件开发包，该开发包目前适
 
 Nebula SDK下载链接：
 
-国内：
+国内：[https://gitee.com/Vzense/NebulaSDK](https://gitee.com/Vzense/NebulaSDK)
 
-[https://gitee.com/Vzense/NebulaSDK](https://gitee.com/Vzense/NebulaSDK)
-
-海外：
-[https://github.com/Vzense/NebulaSDK](https://github.com/Vzense/NebulaSDK)
+海外：[https://github.com/Vzense/NebulaSDK](https://github.com/Vzense/NebulaSDK)
 
